@@ -1,0 +1,212 @@
+{
+  "creator": "Yosys 0.58+35 (git sha1 9a12d9255, clang++ 18.1.8 -fPIC -O3)",
+  "modules": {
+    "BCD_LUT": {
+      "attributes": {
+        "top": "00000000000000000000000000000001",
+        "src": "verilog/BCD_LUT/BCD_LUT.v:29.1-50.10"
+      },
+      "ports": {
+        "u": {
+          "direction": "input",
+          "bits": [ 2, 3 ]
+        },
+        "y": {
+          "direction": "output",
+          "bits": [ 4, 5, 6, 7, 8, "1", 7 ]
+        }
+      },
+      "cells": {
+        "$abc$181$auto$blifparse.cc:397:parse_blif$182": {
+          "hide_name": 1,
+          "type": "$_AND_",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 2 ],
+            "B": [ 3 ],
+            "Y": [ 9 ]
+          }
+        },
+        "$abc$181$auto$blifparse.cc:397:parse_blif$183": {
+          "hide_name": 1,
+          "type": "$_ANDNOT_",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 3 ],
+            "B": [ 2 ],
+            "Y": [ 10 ]
+          }
+        },
+        "$abc$181$auto$blifparse.cc:397:parse_blif$184": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 10 ],
+            "B": [ 9 ],
+            "Y": [ 4 ]
+          }
+        },
+        "$abc$181$auto$blifparse.cc:397:parse_blif$185": {
+          "hide_name": 1,
+          "type": "$_NOR_",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 2 ],
+            "B": [ 3 ],
+            "Y": [ 5 ]
+          }
+        },
+        "$abc$181$auto$blifparse.cc:397:parse_blif$186": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 5 ],
+            "B": [ 10 ],
+            "Y": [ 6 ]
+          }
+        },
+        "$abc$181$auto$blifparse.cc:397:parse_blif$187": {
+          "hide_name": 1,
+          "type": "$_ORNOT_",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 3 ],
+            "B": [ 2 ],
+            "Y": [ 7 ]
+          }
+        },
+        "$abc$181$auto$blifparse.cc:397:parse_blif$188": {
+          "hide_name": 1,
+          "type": "$_ORNOT_",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 2 ],
+            "B": [ 3 ],
+            "Y": [ 8 ]
+          }
+        }
+      },
+      "netnames": {
+        "$abc$181$new_n8": {
+          "hide_name": 1,
+          "bits": [ 9 ],
+          "attributes": {
+          }
+        },
+        "$abc$181$new_n9": {
+          "hide_name": 1,
+          "bits": [ 10 ],
+          "attributes": {
+          }
+        },
+        "Direct_Lookup_Table_n_D_1[0]": {
+          "hide_name": 0,
+          "bits": [ "0", "1", "1", "1", "1", "1", "1" ],
+          "attributes": {
+            "src": "verilog/BCD_LUT/BCD_LUT.v:38.14-38.39"
+          }
+        },
+        "Direct_Lookup_Table_n_D_1[1]": {
+          "hide_name": 0,
+          "bits": [ "0", "0", "0", "0", "1", "1", "0" ],
+          "attributes": {
+            "src": "verilog/BCD_LUT/BCD_LUT.v:38.14-38.39"
+          }
+        },
+        "Direct_Lookup_Table_n_D_1[2]": {
+          "hide_name": 0,
+          "bits": [ "1", "0", "1", "1", "0", "1", "1" ],
+          "attributes": {
+            "src": "verilog/BCD_LUT/BCD_LUT.v:38.14-38.39"
+          }
+        },
+        "Direct_Lookup_Table_n_D_1[3]": {
+          "hide_name": 0,
+          "bits": [ "1", "0", "0", "1", "1", "1", "1" ],
+          "attributes": {
+            "src": "verilog/BCD_LUT/BCD_LUT.v:38.14-38.39"
+          }
+        },
+        "Direct_Lookup_Table_n_D_out1": {
+          "hide_name": 0,
+          "bits": [ 4, 5, 6, 7, 8, "1", 7 ],
+          "attributes": {
+            "src": "verilog/BCD_LUT/BCD_LUT.v:39.14-39.42"
+          }
+        },
+        "u": {
+          "hide_name": 0,
+          "bits": [ 2, 3 ],
+          "attributes": {
+            "src": "verilog/BCD_LUT/BCD_LUT.v:34.17-34.18"
+          }
+        },
+        "y": {
+          "hide_name": 0,
+          "bits": [ 4, 5, 6, 7, 8, "1", 7 ],
+          "attributes": {
+            "src": "verilog/BCD_LUT/BCD_LUT.v:35.17-35.18"
+          }
+        }
+      }
+    }
+  }
+}

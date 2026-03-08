@@ -1,0 +1,96 @@
+{
+  "creator": "Yosys 0.58+35 (git sha1 9a12d9255, clang++ 18.1.8 -fPIC -O3)",
+  "modules": {
+    "Adder": {
+      "attributes": {
+        "top": "00000000000000000000000000000001",
+        "src": "verilog/Adder/Adder.v:29.1-53.10"
+      },
+      "ports": {
+        "A": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "B": {
+          "direction": "input",
+          "bits": [ 3 ]
+        },
+        "Sum": {
+          "direction": "output",
+          "bits": [ 4 ]
+        }
+      },
+      "cells": {
+        "$abc$102$auto$blifparse.cc:397:parse_blif$103": {
+          "hide_name": 1,
+          "type": "$_XOR_",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 3 ],
+            "B": [ 2 ],
+            "Y": [ 4 ]
+          }
+        }
+      },
+      "netnames": {
+        "A": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "src": "verilog/Adder/Adder.v:35.11-35.12"
+          }
+        },
+        "Add_1": {
+          "hide_name": 0,
+          "bits": [ 2, "0" ],
+          "attributes": {
+            "src": "verilog/Adder/Adder.v:41.14-41.19"
+          }
+        },
+        "Add_2": {
+          "hide_name": 0,
+          "bits": [ 3, "0" ],
+          "attributes": {
+            "src": "verilog/Adder/Adder.v:42.14-42.19"
+          }
+        },
+        "Add_add_temp": {
+          "hide_name": 0,
+          "bits": [ 4, "x" ],
+          "attributes": {
+            "src": "verilog/Adder/Adder.v:40.14-40.26"
+          }
+        },
+        "Add_out1": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+            "src": "verilog/Adder/Adder.v:43.8-43.16"
+          }
+        },
+        "B": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "src": "verilog/Adder/Adder.v:36.11-36.12"
+          }
+        },
+        "Sum": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+            "src": "verilog/Adder/Adder.v:37.11-37.14"
+          }
+        }
+      }
+    }
+  }
+}

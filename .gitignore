@@ -1,0 +1,6 @@
+.mypy_cache
+*_ert_rtw
+slprj
+*.slxc
+hdlsrc
+bak/Testbench

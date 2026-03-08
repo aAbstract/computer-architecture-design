@@ -1,0 +1,194 @@
+{
+  "creator": "Yosys 0.58+35 (git sha1 9a12d9255, clang++ 18.1.8 -fPIC -O3)",
+  "modules": {
+    "PRI_CKT": {
+      "attributes": {
+        "top": "00000000000000000000000000000001",
+        "src": "verilog/PRI_CKT/PRI_CKT.v:22.1-54.10"
+      },
+      "ports": {
+        "u": {
+          "direction": "input",
+          "bits": [ 2, 3, 4, 5 ]
+        },
+        "y": {
+          "direction": "output",
+          "bits": [ 6, 7, 8, 5 ]
+        }
+      },
+      "cells": {
+        "$abc$122$auto$blifparse.cc:397:parse_blif$123": {
+          "hide_name": 1,
+          "type": "$_NOT_",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 5 ],
+            "Y": [ 9 ]
+          }
+        },
+        "$abc$122$auto$blifparse.cc:397:parse_blif$124": {
+          "hide_name": 1,
+          "type": "$_ORNOT_",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 3 ],
+            "B": [ 2 ],
+            "Y": [ 10 ]
+          }
+        },
+        "$abc$122$auto$blifparse.cc:397:parse_blif$125": {
+          "hide_name": 1,
+          "type": "$_OR_",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 10 ],
+            "B": [ 4 ],
+            "Y": [ 11 ]
+          }
+        },
+        "$abc$122$auto$blifparse.cc:397:parse_blif$126": {
+          "hide_name": 1,
+          "type": "$_ANDNOT_",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 9 ],
+            "B": [ 11 ],
+            "Y": [ 6 ]
+          }
+        },
+        "$abc$122$auto$blifparse.cc:397:parse_blif$127": {
+          "hide_name": 1,
+          "type": "$_ORNOT_",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 4 ],
+            "B": [ 3 ],
+            "Y": [ 12 ]
+          }
+        },
+        "$abc$122$auto$blifparse.cc:397:parse_blif$128": {
+          "hide_name": 1,
+          "type": "$_ANDNOT_",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 9 ],
+            "B": [ 12 ],
+            "Y": [ 7 ]
+          }
+        },
+        "$abc$122$auto$blifparse.cc:397:parse_blif$129": {
+          "hide_name": 1,
+          "type": "$_ANDNOT_",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 4 ],
+            "B": [ 5 ],
+            "Y": [ 8 ]
+          }
+        }
+      },
+      "netnames": {
+        "$abc$122$new_n10": {
+          "hide_name": 1,
+          "bits": [ 11 ],
+          "attributes": {
+          }
+        },
+        "$abc$122$new_n12": {
+          "hide_name": 1,
+          "bits": [ 12 ],
+          "attributes": {
+          }
+        },
+        "$abc$122$new_n8": {
+          "hide_name": 1,
+          "bits": [ 9 ],
+          "attributes": {
+          }
+        },
+        "$abc$122$new_n9": {
+          "hide_name": 1,
+          "bits": [ 10 ],
+          "attributes": {
+          }
+        },
+        "u": {
+          "hide_name": 0,
+          "bits": [ 2, 3, 4, 5 ],
+          "attributes": {
+            "src": "verilog/PRI_CKT/PRI_CKT.v:27.17-27.18"
+          }
+        },
+        "y": {
+          "hide_name": 0,
+          "bits": [ 6, 7, 8, 5 ],
+          "attributes": {
+            "src": "verilog/PRI_CKT/PRI_CKT.v:28.17-28.18"
+          }
+        },
+        "y_1": {
+          "hide_name": 0,
+          "bits": [ 6, 7, 8, 5 ],
+          "attributes": {
+            "src": "verilog/PRI_CKT/PRI_CKT.v:31.13-31.16"
+          }
+        }
+      }
+    }
+  }
+}
