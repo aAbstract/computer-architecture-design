@@ -27,7 +27,6 @@ options:
 
 Example: expr_to_lut -e "A ^ B ^ C_in" -d
 
-abstract@pop-os:~/work/matlab/HDL_Test
 $ python tools/expr_to_lut.py -e "A ^ B ^ C_in" -d
 A       B       C_in    Out
 0       0       0       0
