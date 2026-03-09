@@ -11,7 +11,7 @@ Using **MATLAB/SimuLink HDL Toolkit**.
   <img src="docs/1.png" alt="1"/>
 </p>
 
-### Expression to LUT Tool
+### Expression to LUT [Tool](tools/expr_to_lut.py)
 ```bash
 $ python tools/expr_to_lut.py -h
 usage: expr_to_lut.py [-h] --expr EXPR [--cfmt {M,V}] [--debug]
