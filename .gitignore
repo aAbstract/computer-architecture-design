@@ -4,3 +4,5 @@ slprj
 *.slxc
 hdlsrc
 bak/Testbench
+.pytest_cache
+**/__pycache__
